@@ -1,8 +1,10 @@
 /node_modules
-/frontend/node_modules
+/front/node_modules
 .env
 
 # Hardhat files
 cache
 src/artifacts
+
+s
 
