@@ -10,19 +10,13 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);  
   const greeter = await ethers.deployContract("Greeter");
-  console.log("Greeter address:", await greeter.getAddress());
-  
-  // const Greeter = await hre.ethers.getContractFactory("Greeter");
-  // const greeter = await Greeter.deploy("Hello, World!");
+  console.log("Greeter address: ", await greeter.getAddress());
+  const token = await ethers.deployContract("Token");
+  console.log("Token address: ", await token.getAddress());
+ 
 
-  // const Token = await hre.ethers.getContractFactory("Token");
-  // const token = await Token.deploy();
-  
-  // await greeter.deployed();
-  // await token.deployed();
 
-  // console.log("Greeter deployed to:", greeter.address);
-  // console.log("Token deployed to:", token.address);
+
 }
 
 main()
